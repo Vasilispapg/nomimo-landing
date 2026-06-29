@@ -199,11 +199,11 @@
 
 <script>
   (function(){
-    var msgs={hero:'Θέλω να ξεκινήσω με το Nomimo.',final:'Θέλω να μπω στη waitlist του Nomimo.',Host:'Ενδιαφέρομαι για το πλάνο Host (€39).',Pro:'Ενδιαφέρομαι για το πλάνο Pro (€59).',Manager:'Είμαι λογιστής/manager — θέλω το πλάνο Manager.'};
     document.querySelectorAll('.js-cta').forEach(function(el){
       el.addEventListener('click',function(){
         var p=el.getAttribute('data-plan');
-        location.href='mailto:hello@nomimo.gr?subject='+encodeURIComponent('Nomimo — '+(p||'waitlist'))+'&body='+encodeURIComponent(msgs[p]||msgs.final);
+        var plan=(p==='Host'||p==='Pro'||p==='Manager')?p:'';
+        location.href='onboarding.html'+(plan?('?plan='+plan):'');
       });
     });
   })();
