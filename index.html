@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nomimo — Δηλώσεις ΑΑΔΕ στο αυτόματο</title>
+<meta name="description" content="Αυτόματη συμμόρφωση βραχυχρόνιας μίσθωσης για ιδιοκτήτες στην Ελλάδα. Κάθε «Δήλωση Βραχυχρόνιας Διαμονής» στην ΑΑΔΕ, εμπρόθεσμα — χωρίς πρόστιμα.">
+<meta property="og:title" content="Nomimo — Δηλώσεις ΑΑΔΕ στο αυτόματο">
+<meta property="og:description" content="Συνδέεις το ακίνητό σου μία φορά. Κάθε κράτηση δηλώνεται εμπρόθεσμα.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500&display=swap">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3/dist/tabler-icons.min.css">
+<style>
+  *{box-sizing:border-box;}
+  body{margin:0;background:#05060f;font-family:'Inter',system-ui,sans-serif;display:flex;justify-content:center;padding:22px;}
+  .nlp{width:100%;max-width:780px;color:#e8ecff;line-height:1.5;}
+  .nlp .disp{font-family:'Space Grotesk',sans-serif;letter-spacing:-.01em;}
+  .nlp a{color:inherit;text-decoration:none;}
+  .nlp .nav-link{color:#aab2d6;font-size:12px;letter-spacing:.04em;text-transform:uppercase;transition:color .2s;}
+  .nlp .nav-link:hover{color:#fff;}
+  .nlp .eyebrow{color:#7d93ff;font-size:11px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;}
+  .nlp .btn{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:500;padding:11px 20px;border-radius:999px;cursor:pointer;transition:transform .15s,box-shadow .2s;border:1px solid transparent;}
+  .nlp .btn:hover{transform:translateY(-1px);}
+  .nlp .btn-primary{background:linear-gradient(135deg,#5b78ff,#3b46d6);color:#fff;box-shadow:0 10px 26px rgba(59,92,255,.45);}
+  .nlp .btn-ghost{background:rgba(255,255,255,.04);border-color:rgba(255,255,255,.18);color:#dfe5ff;}
+  .nlp .card{background:#fff;border-radius:18px;padding:18px 18px 20px;transition:transform .18s,box-shadow .2s;}
+  .nlp .card:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(20,30,90,.45);}
+  .nlp .tile{width:46px;height:46px;border-radius:14px;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 18px rgba(59,92,255,.4);}
+  .nlp .tile i{font-size:24px;color:#fff;}
+  .nlp .glass{background:rgba(255,255,255,.045);border:1px solid rgba(255,255,255,.1);border-radius:18px;}
+  .nlp .sec{margin-bottom:46px;}
+  .nlp .h-sec{font-weight:700;font-size:30px;margin:0 0 8px;}
+  .nlp .pcard{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.12);border-radius:20px;padding:24px 22px;display:flex;flex-direction:column;}
+  .nlp .pcard.pop{border-color:rgba(123,147,255,.7);box-shadow:0 0 0 1px rgba(123,147,255,.4),0 20px 50px rgba(59,92,255,.3);background:linear-gradient(180deg,rgba(91,120,255,.14),rgba(255,255,255,.03));}
+  .nlp .feat{display:flex;gap:9px;align-items:flex-start;font-size:12.5px;color:#c2cae8;margin:9px 0;}
+  .nlp .feat i{color:#7d93ff;font-size:16px;flex:none;margin-top:1px;}
+  .nlp .foot-link{display:block;color:#9aa3c9;font-size:13px;margin:9px 0;transition:color .2s;}
+  .nlp .foot-link:hover{color:#fff;}
+  .nlp .soc{width:34px;height:34px;border-radius:9px;border:1px solid rgba(255,255,255,.14);display:flex;align-items:center;justify-content:center;color:#aab2d6;transition:.2s;}
+  .nlp .soc:hover{background:rgba(255,255,255,.08);color:#fff;}
+  @media(max-width:560px){.nlp .h-sec{font-size:24px;}}
+</style>
+</head>
+<body>
+<div class="nlp">
+  <div style="position:relative;background:radial-gradient(120% 60% at 80% -5%,#1a2566 0%,#0b1030 42%,#070a1f 100%);border-radius:22px;overflow:hidden;padding:18px 22px 0;">
+
+    <nav style="display:flex;align-items:center;justify-content:space-between;position:relative;z-index:3;padding:6px 0 2px;">
+      <div style="display:flex;align-items:center;gap:9px;">
+        <span style="width:30px;height:30px;border-radius:9px;background:linear-gradient(135deg,#6b86ff,#3b46d6);display:flex;align-items:center;justify-content:center;"><i class="ti ti-shield-check" style="font-size:18px;color:#fff;"></i></span>
+        <span class="disp" style="font-weight:700;font-size:15px;letter-spacing:.02em;">NOMIMO</span>
+      </div>
+      <div style="display:flex;gap:20px;align-items:center;">
+        <a class="nav-link" href="#feat">Λειτουργίες</a>
+        <a class="nav-link" href="#how">Πώς δουλεύει</a>
+        <a class="nav-link" href="#pricing">Τιμές</a>
+      </div>
+      <div class="btn btn-ghost">EN <i class="ti ti-chevron-down" style="font-size:14px;"></i></div>
+    </nav>
+
+    <section style="position:relative;min-height:300px;padding:34px 0 14px;">
+      <svg viewBox="0 0 600 600" aria-hidden="true" style="position:absolute;right:-150px;top:-10px;width:480px;max-width:70%;opacity:.95;">
+        <defs>
+          <linearGradient id="ring" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#8aa0ff"/><stop offset=".5" stop-color="#2c45d8"/><stop offset="1" stop-color="#0f1a55"/></linearGradient>
+          <radialGradient id="glow" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#3b5cff" stop-opacity=".5"/><stop offset="1" stop-color="#3b5cff" stop-opacity="0"/></radialGradient>
+        </defs>
+        <circle cx="300" cy="300" r="290" fill="url(#glow)"/>
+        <g transform="rotate(-24 300 300)">
+          <ellipse cx="300" cy="300" rx="215" ry="118" fill="none" stroke="url(#ring)" stroke-width="86"/>
+          <ellipse cx="300" cy="300" rx="215" ry="118" fill="none" stroke="#b9c8ff" stroke-width="5" opacity=".45"/>
+          <ellipse cx="300" cy="300" rx="120" ry="60" fill="none" stroke="url(#ring)" stroke-width="40" opacity=".8"/>
+        </g>
+      </svg>
+      <div style="position:relative;z-index:2;max-width:62%;">
+        <h1 class="disp" style="font-weight:700;font-size:46px;line-height:1.02;margin:0 0 18px;">Δηλώσεις ΑΑΔΕ<br>στο αυτόματο</h1>
+        <p style="color:#b3bce0;font-size:15px;max-width:330px;margin:0 0 26px;">Συνδέεις το ακίνητό σου μία φορά. Κάθε κράτηση δηλώνεται εμπρόθεσμα — χωρίς πρόστιμα, χωρίς κόπο.</p>
+        <div style="display:flex;gap:12px;flex-wrap:wrap;">
+          <div class="btn btn-primary js-cta" data-plan="hero">Ξεκίνα τώρα <i class="ti ti-arrow-right" style="font-size:16px;"></i></div>
+          <a class="btn btn-ghost" href="#how">Δες πώς</a>
+        </div>
+      </div>
+    </section>
+
+    <a href="#what" style="display:flex;width:34px;height:34px;border-radius:50%;border:1px solid rgba(255,255,255,.22);align-items:center;justify-content:center;margin:6px 0 40px;"><i class="ti ti-chevron-down" style="font-size:16px;color:#aab2d6;"></i></a>
+
+    <section class="sec" id="what">
+      <p class="eyebrow" style="margin:0 0 12px;">Τι κάνουμε</p>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:26px;align-items:start;">
+        <h2 class="disp h-sec">Η συμμόρφωση της βραχυχρόνιας, στον αυτόματο πιλότο.</h2>
+        <p style="color:#b3bce0;font-size:14.5px;margin:4px 0 0;">Το Nomimo συνδέεται με Airbnb &amp; Booking, μαζεύει τις κρατήσεις σου και υποβάλλει κάθε «Δήλωση Βραχυχρόνιας Διαμονής» στην ΑΑΔΕ — σωστά και εμπρόθεσμα. Εσύ απλώς φιλοξενείς· τη γραφειοκρατία την κρατάμε εμείς.</p>
+      </div>
+    </section>
+
+    <section class="sec" id="feat">
+      <p class="eyebrow" style="margin:0 0 14px;">Πώς σε καλύπτει</p>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:13px;">
+        <div class="card"><div class="tile" style="background:linear-gradient(145deg,#aebbff,#5566f5);"><i class="ti ti-calendar-down"></i></div><p class="disp" style="color:#3b46d6;font-weight:700;font-size:15px;margin:14px 0 6px;">Auto-import</p><p style="color:#5b6480;font-size:12.5px;margin:0;">Τραβάει Airbnb &amp; Booking αυτόματα, χωρίς χειροκίνητη εισαγωγή.</p></div>
+        <div class="card"><div class="tile" style="background:linear-gradient(145deg,#b9adff,#7a5bf0);"><i class="ti ti-send"></i></div><p class="disp" style="color:#3b46d6;font-weight:700;font-size:15px;margin:14px 0 6px;">Ένα κλικ</p><p style="color:#5b6480;font-size:12.5px;margin:0;">Pre-filled Δήλωση Βραχυχρόνιας Διαμονής στην ΑΑΔΕ.</p></div>
+        <div class="card"><div class="tile" style="background:linear-gradient(145deg,#a9c4ff,#4f7bf2);"><i class="ti ti-bell-ringing"></i></div><p class="disp" style="color:#3b46d6;font-weight:700;font-size:15px;margin:14px 0 6px;">Προθεσμίες</p><p style="color:#5b6480;font-size:12.5px;margin:0;">Υπενθυμίσεις πριν τις 20 κάθε μήνα. Καμία χαμένη.</p></div>
+        <div class="card"><div class="tile" style="background:linear-gradient(145deg,#9fd2ff,#3b8ef0);"><i class="ti ti-shield-check"></i></div><p class="disp" style="color:#3b46d6;font-weight:700;font-size:15px;margin:14px 0 6px;">Μηδέν ρίσκο</p><p style="color:#5b6480;font-size:12.5px;margin:0;">Συμμόρφωση που σε γλιτώνει από πρόστιμα €20.000+.</p></div>
+      </div>
+    </section>
+
+    <section class="sec" id="how">
+      <p class="eyebrow" style="margin:0 0 6px;">Τι πρέπει να κάνεις</p>
+      <h2 class="disp h-sec" style="margin-bottom:20px;">Τρία βήματα. Μετά ξεχνάς ότι υπάρχει.</h2>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:14px;">
+        <div class="glass" style="padding:20px;"><div class="disp" style="font-size:30px;font-weight:700;color:#5b78ff;">01</div><p class="disp" style="font-weight:700;font-size:15px;margin:10px 0 6px;">Σύνδεσε το ακίνητο</p><p style="color:#aab2d6;font-size:12.5px;margin:0;">ΑΜΑ + ημερολόγιο Airbnb/Booking + λογαριασμό TaxisNet. Μία φορά.</p></div>
+        <div class="glass" style="padding:20px;"><div class="disp" style="font-size:30px;font-weight:700;color:#5b78ff;">02</div><p class="disp" style="font-weight:700;font-size:15px;margin:10px 0 6px;">Επιβεβαίωσε</p><p style="color:#aab2d6;font-size:12.5px;margin:0;">Όταν λείπει ποσό ή στοιχείο ενοίκου, το συμπληρώνεις σε δευτερόλεπτα.</p></div>
+        <div class="glass" style="padding:20px;"><div class="disp" style="font-size:30px;font-weight:700;color:#5b78ff;">03</div><p class="disp" style="font-weight:700;font-size:15px;margin:10px 0 6px;">Χαλάρωσε</p><p style="color:#aab2d6;font-size:12.5px;margin:0;">Υποβάλλουμε εμείς πριν τη λήξη και σου στέλνουμε απόδειξη. 10′/μήνα.</p></div>
+      </div>
+    </section>
+
+    <section class="sec glass" style="padding:28px;">
+      <p class="eyebrow" style="margin:0 0 10px;">Γιατί το κάνουμε</p>
+      <p class="disp" style="font-weight:500;font-size:23px;line-height:1.3;margin:0 0 22px;color:#eef1ff;">Η ΑΑΔΕ δεν έχει αυτόματη υποβολή — κάθε κράτηση δηλώνεται με το χέρι, με προθεσμίες που <span style="color:#7d93ff;">ξεχνιούνται</span> και πρόστιμα από <span style="color:#7d93ff;">€20.000</span>. Φτιάξαμε το Nomimo για να μη χρειάζεται να το σκέφτεσαι ποτέ ξανά.</p>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px;border-top:1px solid rgba(255,255,255,.1);padding-top:20px;">
+        <div><div class="disp" style="font-weight:700;font-size:40px;color:#5b78ff;line-height:1;">20</div><p style="color:#8a93bd;font-size:10.5px;margin:7px 0 0;text-transform:uppercase;letter-spacing:.04em;">η προθεσμία κάθε μήνα</p></div>
+        <div><div class="disp" style="font-weight:700;font-size:40px;color:#5b78ff;line-height:1;">10′</div><p style="color:#8a93bd;font-size:10.5px;margin:7px 0 0;text-transform:uppercase;letter-spacing:.04em;">λεπτά τον μήνα, όχι ώρες</p></div>
+        <div><div class="disp" style="font-weight:700;font-size:40px;color:transparent;-webkit-text-stroke:1.5px #4a59b8;line-height:1;">€20K</div><p style="color:#8a93bd;font-size:10.5px;margin:7px 0 0;text-transform:uppercase;letter-spacing:.04em;">πρόστιμο που αποφεύγεις</p></div>
+      </div>
+    </section>
+
+    <section class="sec">
+      <p class="eyebrow" style="margin:0 0 6px;">Γιατί εμάς</p>
+      <h2 class="disp h-sec" style="margin-bottom:20px;">Όχι ακόμα ένα channel manager.</h2>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:13px;">
+        <div class="glass" style="padding:20px;"><i class="ti ti-flag-2" style="font-size:24px;color:#7d93ff;"></i><p class="disp" style="font-weight:700;font-size:14px;margin:12px 0 6px;">Compliance-first</p><p style="color:#aab2d6;font-size:12.5px;margin:0;">Φτιαγμένο αποκλειστικά για την ελληνική συμμόρφωση — όχι generic εργαλείο.</p></div>
+        <div class="glass" style="padding:20px;"><i class="ti ti-file-check" style="font-size:24px;color:#7d93ff;"></i><p class="disp" style="font-weight:700;font-size:14px;margin:12px 0 6px;">Απόδειξη πάντα</p><p style="color:#aab2d6;font-size:12.5px;margin:0;">Κρατάμε επιβεβαίωση ΑΑΔΕ για κάθε υποβολή. Καλυμμένος σε έλεγχο.</p></div>
+        <div class="glass" style="padding:20px;"><i class="ti ti-calculator" style="font-size:24px;color:#7d93ff;"></i><p class="disp" style="font-weight:700;font-size:14px;margin:12px 0 6px;">Απλά μαθηματικά</p><p style="color:#aab2d6;font-size:12.5px;margin:0;">€39/μήνα vs πρόστιμο €20.000. Το νούμερο μιλάει μόνο του.</p></div>
+        <div class="glass" style="padding:20px;"><i class="ti ti-bolt" style="font-size:24px;color:#7d93ff;"></i><p class="disp" style="font-weight:700;font-size:14px;margin:12px 0 6px;">Setup σε 5′</p><p style="color:#aab2d6;font-size:12.5px;margin:0;">Συνδέεις, και δουλεύει. Καμία εγκατάσταση, κανένας λογιστικός πόνος.</p></div>
+      </div>
+    </section>
+
+    <section class="sec" id="pricing">
+      <p class="eyebrow" style="margin:0 0 6px;">Τιμοκατάλογος</p>
+      <h2 class="disp h-sec" style="margin-bottom:6px;">Διάλεξε πλάνο. Άλλαξε όποτε θες.</h2>
+      <p style="color:#8a93bd;font-size:13px;margin:0 0 22px;">Χωρίς δέσμευση. Early-access 50% για τους πρώτους 100.</p>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:14px;">
+        <div class="pcard">
+          <p class="disp" style="font-weight:500;font-size:14px;color:#aab2d6;margin:0;">Host</p>
+          <p class="disp" style="margin:8px 0 2px;"><span style="font-size:38px;font-weight:700;">€39</span><span style="color:#8a93bd;font-size:13px;">/μήνα</span></p>
+          <p style="color:#8a93bd;font-size:12px;margin:0 0 14px;">1–2 ακίνητα</p>
+          <div class="feat"><i class="ti ti-check"></i> Auto-import κρατήσεων</div>
+          <div class="feat"><i class="ti ti-check"></i> Υποβολή δηλώσεων ΑΑΔΕ</div>
+          <div class="feat"><i class="ti ti-check"></i> Alerts προθεσμιών</div>
+          <div class="feat"><i class="ti ti-check"></i> Email support</div>
+          <div class="btn btn-ghost js-cta" data-plan="Host" style="justify-content:center;margin-top:18px;">Διάλεξε Host</div>
+        </div>
+        <div class="pcard pop">
+          <div style="display:flex;justify-content:space-between;align-items:center;"><p class="disp" style="font-weight:500;font-size:14px;color:#cdd6ff;margin:0;">Pro</p><span style="background:linear-gradient(135deg,#5b78ff,#3b46d6);color:#fff;font-size:10px;padding:4px 10px;border-radius:999px;">Δημοφιλές</span></div>
+          <p class="disp" style="margin:8px 0 2px;"><span style="font-size:38px;font-weight:700;">€59</span><span style="color:#aab2d6;font-size:13px;">/μήνα</span></p>
+          <p style="color:#aab2d6;font-size:12px;margin:0 0 14px;">Έως 5 ακίνητα</p>
+          <div class="feat"><i class="ti ti-check"></i> Όλα του Host</div>
+          <div class="feat"><i class="ti ti-check"></i> Τροποποιήσεις &amp; ακυρώσεις</div>
+          <div class="feat"><i class="ti ti-check"></i> Ετήσιο tax summary</div>
+          <div class="feat"><i class="ti ti-check"></i> Priority support</div>
+          <div class="btn btn-primary js-cta" data-plan="Pro" style="justify-content:center;margin-top:18px;">Διάλεξε Pro</div>
+        </div>
+        <div class="pcard">
+          <p class="disp" style="font-weight:500;font-size:14px;color:#aab2d6;margin:0;">Manager</p>
+          <p class="disp" style="margin:8px 0 2px;"><span style="font-size:38px;font-weight:700;">€79+</span><span style="color:#8a93bd;font-size:13px;">/μήνα</span></p>
+          <p style="color:#8a93bd;font-size:12px;margin:0 0 14px;">Έως 15 + λογιστές</p>
+          <div class="feat"><i class="ti ti-check"></i> Όλα του Pro</div>
+          <div class="feat"><i class="ti ti-check"></i> Multi-client διαχείριση</div>
+          <div class="feat"><i class="ti ti-check"></i> Μαζικές υποβολές</div>
+          <div class="feat"><i class="ti ti-check"></i> Dedicated support</div>
+          <div class="btn btn-ghost js-cta" data-plan="Manager" style="justify-content:center;margin-top:18px;">Μίλα μαζί μας</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec" style="text-align:center;padding:14px 0 6px;">
+      <h2 class="disp" style="font-weight:700;font-size:30px;margin:0 0 10px;">Μείνε νόμιμος. Χωρίς να το σκέφτεσαι.</h2>
+      <p style="color:#aab2d6;font-size:14px;margin:0 0 22px;">Ξεκίνα σε 5 λεπτά. Χωρίς κάρτα για τη waitlist.</p>
+      <div class="btn btn-primary js-cta" data-plan="final" style="margin:0 auto;">Ξεκίνα δωρεάν <i class="ti ti-arrow-right" style="font-size:16px;"></i></div>
+    </section>
+
+    <footer style="border-top:1px solid rgba(255,255,255,.1);margin:30px -22px 0;padding:30px 22px 26px;">
+      <div style="display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:20px;">
+        <div>
+          <div style="display:flex;align-items:center;gap:9px;margin-bottom:12px;"><span style="width:28px;height:28px;border-radius:8px;background:linear-gradient(135deg,#6b86ff,#3b46d6);display:flex;align-items:center;justify-content:center;"><i class="ti ti-shield-check" style="font-size:16px;color:#fff;"></i></span><span class="disp" style="font-weight:700;font-size:14px;">NOMIMO</span></div>
+          <p style="color:#8a93bd;font-size:12.5px;margin:0 0 14px;max-width:200px;">Αυτόματη συμμόρφωση βραχυχρόνιας μίσθωσης για ιδιοκτήτες στην Ελλάδα.</p>
+          <div style="display:flex;gap:8px;"><a class="soc" href="#"><i class="ti ti-brand-instagram" style="font-size:18px;"></i></a><a class="soc" href="#"><i class="ti ti-brand-facebook" style="font-size:18px;"></i></a><a class="soc" href="#"><i class="ti ti-brand-linkedin" style="font-size:18px;"></i></a></div>
+        </div>
+        <div><p class="disp" style="font-size:12px;color:#fff;margin:0 0 6px;font-weight:500;">Προϊόν</p><a class="foot-link" href="#feat">Λειτουργίες</a><a class="foot-link" href="#how">Πώς δουλεύει</a><a class="foot-link" href="#pricing">Τιμές</a></div>
+        <div><p class="disp" style="font-size:12px;color:#fff;margin:0 0 6px;font-weight:500;">Εταιρεία</p><a class="foot-link" href="#">Σχετικά</a><a class="foot-link" href="#">Επικοινωνία</a></div>
+        <div><p class="disp" style="font-size:12px;color:#fff;margin:0 0 6px;font-weight:500;">Νομικά</p><a class="foot-link" href="#">Όροι χρήσης</a><a class="foot-link" href="#">Απόρρητο</a><a class="foot-link" href="#">GDPR</a></div>
+      </div>
+      <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;border-top:1px solid rgba(255,255,255,.08);margin-top:24px;padding-top:18px;">
+        <span style="color:#6c75a0;font-size:11.5px;">© 2026 Nomimo. Με επιφύλαξη παντός δικαιώματος.</span>
+        <span style="color:#6c75a0;font-size:11.5px;">hello@nomimo.gr</span>
+      </div>
+    </footer>
+  </div>
+</div>
+
+<script>
+  (function(){
+    var msgs={hero:'Θέλω να ξεκινήσω με το Nomimo.',final:'Θέλω να μπω στη waitlist του Nomimo.',Host:'Ενδιαφέρομαι για το πλάνο Host (€39).',Pro:'Ενδιαφέρομαι για το πλάνο Pro (€59).',Manager:'Είμαι λογιστής/manager — θέλω το πλάνο Manager.'};
+    document.querySelectorAll('.js-cta').forEach(function(el){
+      el.addEventListener('click',function(){
+        var p=el.getAttribute('data-plan');
+        location.href='mailto:hello@nomimo.gr?subject='+encodeURIComponent('Nomimo — '+(p||'waitlist'))+'&body='+encodeURIComponent(msgs[p]||msgs.final);
+      });
+    });
+  })();
+</script>
+</body>
+</html>
